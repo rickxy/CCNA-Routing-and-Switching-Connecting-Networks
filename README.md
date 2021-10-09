@@ -1,7 +1,12 @@
 # CCNA-Routing-and-Switching-Connecting-Networks
 CCNA Routing and Switching Connecting Networks
 
+![Screenshot (93)](https://user-images.githubusercontent.com/36708000/136676639-434eca1d-b56a-4e80-b9a8-9c38b4406dc9.png)
+
+
 Objectives
+
+
 In this Packet Tracer Skills Based Assessment, you will do as follows:
 
 Configure PPP encapsulation and CHAP authentication for serial links.
