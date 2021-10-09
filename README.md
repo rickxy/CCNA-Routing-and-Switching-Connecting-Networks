@@ -10,9 +10,13 @@ Objectives
 In this Packet Tracer Skills Based Assessment, you will do as follows:
 
 Configure PPP encapsulation and CHAP authentication for serial links.
+
 Configure a GRE tunnel.
+
 Configure OSPF.
+
 Configure BGP.
+
 Configure standard and extended IPv4 ACLs.
 Configure IPv6 ACLs.
 For the sake of time, many repetitive, but important, configuration tasks have been omitted from this assessment. Many of these tasks, especially those related to security, are essential elements of a network configuration. The intent of this activity is not to diminish the importance of full device configurations.
