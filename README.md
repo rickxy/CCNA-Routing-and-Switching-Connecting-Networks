@@ -61,7 +61,9 @@ Addressing Table
 
 
 Instructions
+
 Step 1: Configure PPP encapsulation and authentication.
+
 a.  Configure PPP encapsulation for the link between HQ and ISP1 and the link between Branch and ISP1.
 
 b.  Configure CHAP authentication between the links.
@@ -69,11 +71,13 @@ b.  Configure CHAP authentication between the links.
 c.  Configure the correct username and the password cisco123 for CHAP authentication on both HQ and Branch.
 
 Step 2: Configure a GRE tunnel with routing.
+
 a.  Configure a GRE tunnel between HQ and Branch.
 
 b.  Configure OSPF 1 to route the traffic between the LANs of HQ and Branch through the GRE tunnel. Summarize the networks attached to Branch.
 
 Step 3: Configure BGP.
+
 Configure BGP between ISP1 in Internet cluster and 209.165.202.128/27 network on HQ.
 
 a.  Use AS number 65020 for HQ.
@@ -83,6 +87,7 @@ b.  Configure ISP1 as the BGP neighbor.
 c.  Only advertise the 209.165.202.128 / 27 network into BGP.
 
 Step 4: Configure ACLs for NAT.
+
 a.  Configure a standard access list numbered 1 on Branch to allow NAT for hosts in network 192.168.0.0 /23.
 
 b.  Configure a standard access list numbered 1 on HQ to allow NAT for hosts in network 192.168.2.0 /24.
@@ -90,6 +95,7 @@ b.  Configure a standard access list numbered 1 on HQ to allow NAT for hosts in 
 c.  Configure a standard access list numbered 1 on Customer to allow NAT for hosts in network 192.168.3.0 /24.
 
 Step 5: Configure a standard ACL to restrict remote access to the Customer router.
+
 A standard ACL named VTY_ADMIN is configured to limit access via VTY to the Customer router. This ACL will only allow hosts from the LAN attached to the G0/1 interface and the hosts from the LANs on Branch router to access the Customer router. All the other connections to VTY should fail.
 
 a.  Configure one ACL named VTY_ADMIN with three ACEs in the following order:
@@ -105,6 +111,7 @@ b.  Apply the ACL to the appropriate interface.
 Note: Use the public IPv4 addresses in the ACLs when the private IPv4 addresses have been mapped to public IPv4 addresses.
 
 Step 6: Configure an extended ACL to restrict access to the HQ LAN.
+
 a.  Configure an extended ACL named HTTP_ACCESS that allows Branch LANs, Customer LANs and the LAN inside HQ to access HQ-Server via the web browser.
 
 Configure this ACL with the following 5 ACEs in the following order:
@@ -124,6 +131,7 @@ b.  Apply the ACL to the HQ G0/1 interface.
 Note: Use the public IPv4 addresses in the ACLs when the private IPv4 addresses have been mapped to public IPv4 addresses.
 
 Step 7: Configure an IPv6 access list to restrict access to the HQ LAN.
+
 a.  Configure an IPv6 access list named HTTP6_ACCESS that allows Branch LANs, Customer LANs and the LAN inside HQ to access HQ-Server via the web browser.
 
 b.  Configure this ACL with the following 6 ACEs in the following order:
