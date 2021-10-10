@@ -18,7 +18,9 @@ Configure OSPF.
 Configure BGP.
 
 Configure standard and extended IPv4 ACLs.
+
 Configure IPv6 ACLs.
+
 For the sake of time, many repetitive, but important, configuration tasks have been omitted from this assessment. Many of these tasks, especially those related to security, are essential elements of a network configuration. The intent of this activity is not to diminish the importance of full device configurations.
 
 The IP addresses for all the devices have been configured and some of the routing configurations are already completed in this activity.
@@ -28,25 +30,35 @@ You are required to configure the devices as follows:
 Branch:
 
 Configure PPP and CHAP authentication on the appropriate interface.
+
 Configure GRE tunnel.
+
 Configure OSPF.
+
 Configure standard IPv4 ACL.
+
 Customer:
 
 Configure standard IPv4 ACLs.
+
 HQ:
 
 Configure PPP and CHAP authentication on the appropriate interface.
+
 Configure GRE tunnel.
+
 Configure OSPF.
+
 Configure standard and extended IPv4 ACLs.
+
 Configure IPv6 ACLs.
+
 Note: All the routers in AS 65001 are locked and no configurations are performed by the students. Furthermore, all the switches are pre-configured.
 
 Addressing Table
-Connecting Networks v6.0 - CN Practice Skills Assessment - PT 2
 
- 
+ ![B0](https://user-images.githubusercontent.com/36708000/136676721-85aef5be-f06d-46be-8e18-bdedae6c7279.jpg)
+
 
 Instructions
 Step 1: Configure PPP encapsulation and authentication.
